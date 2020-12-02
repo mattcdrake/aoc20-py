@@ -29,7 +29,7 @@ def get_bounds(bound_str: str) -> (int, int):
     return (int(nums[0]), int(nums[1]))
 
 
-def p1(input_path: str) -> str:
+def p_1(input_path: str) -> str:
     with open(input_path) as f:
         lines = [line for line in f.readlines()]
 
@@ -43,10 +43,10 @@ def p1(input_path: str) -> str:
         if found_ct >= lower and found_ct <= upper:
             valid_passwords += 1
 
-    return valid_passwords
+    return str(valid_passwords)
 
 
-def p2(input_path: str) -> str:
+def p_2(input_path: str) -> str:
     with open(input_path) as f:
         lines = [line for line in f.readlines()]
 
@@ -59,5 +59,5 @@ def p2(input_path: str) -> str:
         if is_valid_password(lower, upper, parts[2], parts[1][0]):
             valid_passwords += 1
 
-    return valid_passwords
+    return str(valid_passwords)
 

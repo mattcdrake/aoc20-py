@@ -1,4 +1,4 @@
-def p1(input_path: str) -> str:
+def p_1(input_path: str) -> str:
     with open(input_path) as f:
         vals = [int(line) for line in f.readlines()]
 
@@ -10,7 +10,7 @@ def p1(input_path: str) -> str:
     return "Couldn't solve this one"
 
 
-def p2(input_path: str) -> str:
+def p_2(input_path: str) -> str:
     with open(input_path) as f:
         vals = [int(line) for line in f.readlines()]
 
